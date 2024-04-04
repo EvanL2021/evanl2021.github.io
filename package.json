@@ -7,7 +7,7 @@
     "build": "ng build --base-href 'https://github.com/EvanL2021/evanl2021.github.io'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "angular-cli-ghpages --dir=dist/portfolio",
+    "publish": "angular-cli-ghpages --dir=dist/portfolio/browser",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
   },
   "private": true,
