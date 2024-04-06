@@ -1,0 +1,21 @@
+header {
+    margin: 0rem 18.75rem 0rem 18.75rem;
+}
+
+.titles {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    color: #DCDCDC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3.75rem;
+}
