@@ -1,0 +1,35 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tabsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 6.25rem;
+
+        list-style-type: none;
+        gap: 3.125rem;
+
+        li a {
+            cursor: pointer;
+            font-family: 'Roboto', 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 3.75rem;
+        }
+
+        .selected {
+            color: #DCDCDC
+        }
+
+        .unselected {
+            color: #9D9D9D
+        }
+    }
+}

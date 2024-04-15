@@ -1,0 +1,11 @@
+<div class="skillsContainer">
+    <nav>
+        <ul class="tabsContainer">
+            <li *ngFor="let category of categories">
+                <a (click)="setActive(category)" [class]="selectedCategory == category ? 'selected' : 'unselected'">{{category}}</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <app-skills-shower [category]="selectedCategory" />
+</div>
