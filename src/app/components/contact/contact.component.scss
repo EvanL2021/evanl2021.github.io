@@ -1,0 +1,86 @@
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'Roboto', 'Lexend';
+        font-style: bold;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 10rem;
+        color: #DCDCDC;
+    }
+
+    form {
+        background: linear-gradient(180deg, #343D6B 0%, #2C3A7A 100%);
+        width: 36rem;
+        height: 40.25rem;
+        border-radius: 2.813rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .mat-ecv-outlined-color {
+        background: transparent;
+        border: #7626c5 0.188rem solid;
+        border-radius: 1.25rem;
+        color: #dcdcdc;
+    }
+
+    .mat-ecv-color {
+        background: linear-gradient(95.96deg, #7D1DDC 0%, #6F2FAE 100%);
+        text-align: center;
+        font-family: 'Roboto', 'Lexend';
+        color: #dcdcdc;
+        width: 23.75rem;
+        height: 3.5rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 5rem;
+    }
+
+    .inputForm {
+        width: 23.75rem;
+        height: 3rem;
+        background-color: transparent;
+        border: #4F598E 0.15rem solid;
+        border-radius: 0.313rem;
+        margin-bottom: 2.813rem;
+    }
+
+    .inputForm:focus {
+        outline: none;
+    }
+
+    label {
+        font-family: 'Roboto', 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        color: #DCDCDC;
+        margin-bottom: 0.5rem;
+        padding: 0 0.313rem;
+        text-align: center;
+    }
+
+    .textAreaForm {
+        height: 10rem;
+        resize: none;
+    }
+
+    .fieldContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redText {
+        color: #e71818
+    }
+}

@@ -1,0 +1,22 @@
+<article>
+    <h2>Me contacter</h2>
+
+    <form [formGroup]="contactForm" (ngSubmit)="sendMail()">
+        <div class="fieldContainer">
+            <label for="email" [class]="!contactForm.controls.email.valid ? 'redText' : ''">Email</label>
+            <input class="inputForm" id="email" type="email" formControlName="email">
+        </div>
+
+        <div class="fieldContainer">
+            <label for="name" [class]="!contactForm.controls.name.valid ? 'redText' : ''">Nom</label>
+            <input class="inputForm" id="subject" type="text" formControlName="name">
+        </div>
+
+        <div class="fieldContainer">
+            <label for="body" [class]="!contactForm.controls.body.valid ? 'redText' : ''">Message</label>
+            <textarea class="inputForm textAreaForm" formControlName="body" id="body" name="body" rows="5" cols="33"></textarea>
+        </div>
+
+        <button type="submit" mat-fab extended [color]="!contactForm.valid ? 'ecv-outlined-color' : 'ecv-color'" [disabled]="!contactForm.valid">Confirmer</button>
+    </form>
+</article>
