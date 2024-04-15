@@ -18,7 +18,7 @@ export enum Languages {
     PostgresQL = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/databases/postgresql.svg",
     Csharp = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/programming%20languages/c%23.svg",
     Rust = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/programming%20languages/rust.svg",
-    Java = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/programming%20languages/rust.svg",
+    Java = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/programming%20languages/java.svg",
     Python = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/programming%20languages/python.svg",
     Docker = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/cloud/docker.svg",
     Github = "https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/main/cloud/github.svg",
