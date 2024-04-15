@@ -1,0 +1,14 @@
+<main>
+    <div class="presContainer">
+        <h1>Bonjour,</h1>
+        <h2>Je suis Evan Labit</h2>
+        <p>Développeur web & mobile</p>
+        <p>Alternant en BUT Informatique chez IBM CIC Lille</p>
+
+        <div class="btnsCont">
+            <app-button (doClick)="downloadCV()" outlined="true" icon="download" text="CV"/>
+            <app-button (doClick)="goToContact()" text="Contactez moi"/>
+        </div>
+    </div>
+    <img [src]="profileUrl"/>
+</main>

@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class ButtonComponent {
   @Input({required: true}) text!: string;
   @Input({required: false}) icon!: string;
+  @Input({required: false}) outlined!: string;
   @Output() doClick: EventEmitter<any> = new EventEmitter();
 
   onClick(): void {

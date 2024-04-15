@@ -1,9 +1,18 @@
 .button {
   width: 9.375rem;
   height: 2.813rem;
+  color: #DCDCDC;
+  font-family: 'Roboto', 'Lexend';
 }
 
 .mat-ecv-color {
   background: linear-gradient(95.96deg, #7D1DDC 0%, #6F2FAE 100%);
+  color: #dcdcdc;
+}
+
+.mat-ecv-outlined-color {
+  background: transparent;
+  border: #7626c5 0.188rem solid;
+  border-radius: 1.25rem;
   color: #dcdcdc;
 }
