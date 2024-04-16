@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from 'components/button/button.component';
-import { Router } from '@angular/router';
+import { ViewportScroller } from "@angular/common";
 
 @Component({
   selector: 'app-header',
@@ -10,9 +10,10 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private router: Router) {};
+
+  constructor(private scroller: ViewportScroller) {};
 
   goToContact() {
-    this.router.navigate(['/'], {fragment: "contact"})
+    this.scroller.scrollToAnchor("contact");
   }
 }
