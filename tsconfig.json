@@ -19,6 +19,7 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "baseUrl": "./src/app",
+    "resolveJsonModule": true,
     "lib": [
       "ES2022",
       "dom"

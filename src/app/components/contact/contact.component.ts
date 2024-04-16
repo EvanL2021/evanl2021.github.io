@@ -1,8 +1,8 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { ContactService } from 'services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -18,25 +18,10 @@ export class ContactComponent {
     body: new FormControl('', [Validators.required, Validators.minLength(25)]),
   });
 
-  constructor(private httpClient: HttpClient) {};
+  constructor(private contactService: ContactService) {};
 
   sendMail() {
-    const {email, name, body} = this.contactForm.value;
-
-    const httpOptions = {
-      headers: new HttpHeaders({
-        Accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded"
-      })
-    };
-
-    this.httpClient.post<any>("https://formspree.io/f/xjvnpnva", `name=${name}&email=${email}&message=${body}`, httpOptions).subscribe({
-      next: data => {
-        window.confirm('E-mail envoyé !')
-      },
-      error: error => {
-          console.log('error!', error.message);
-      }
-  })    
+    const {name, email, body} = this.contactForm.value;
+    this.contactService.sendMail(name || "", email || "", body || "");
   }
 }
