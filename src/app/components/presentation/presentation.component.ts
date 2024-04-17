@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from 'components/button/button.component';
-import { Router } from '@angular/router';
+import { ScrollService } from 'services/scroll.service';
 
 @Component({
   selector: 'app-presentation',
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class PresentationComponent {
   profileUrl: string = "assets/evan.jpg"
   
-  constructor(private router: Router) {};
+  constructor(private scroller: ScrollService) {};
 
   downloadCV() {
     const link = document.createElement('a');
@@ -23,6 +23,6 @@ export class PresentationComponent {
   }
 
   goToContact() {
-    this.router.navigate(['/'], {fragment: "contact"})
+    this.scroller.scrollTo("contact");
   }
 }

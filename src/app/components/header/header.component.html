@@ -1,11 +1,11 @@
 <header id="accueil">
     <nav>
         <ul class="titles">
-            <li><a class="link" href="#accueil">Accueil</a></li>
-            <li><a class="link" href="#competences">Mes compétences</a></li>
-            <li><a class="link" href="#projets">Mes projets</a></li>
-            <li><a class="link" href="#parcours">Mon parcours</a></li>
-            <li><app-button (doClick)="goToContact()" text="Contact"/></li>
+            <li><a class="link" (click)="goTo('accueil')">Accueil</a></li>
+            <li><a class="link" (click)="goTo('competences')">Mes compétences</a></li>
+            <li><a class="link" (click)="goTo('projets')">Mes projets</a></li>
+            <li><a class="link" (click)="goTo('parcours')">Mon parcours</a></li>
+            <li><app-button (doClick)="goTo('contact')" text="Contact"/></li>
         </ul>
     </nav>
 </header>

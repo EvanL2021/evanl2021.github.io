@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from 'components/button/button.component';
 import { ViewportScroller } from "@angular/common";
+import { ScrollService } from 'services/scroll.service';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +12,9 @@ import { ViewportScroller } from "@angular/common";
 })
 export class HeaderComponent {
 
-  constructor(private scroller: ViewportScroller) {};
+  constructor(private scroller: ScrollService) {};
 
-  goToContact() {
-    this.scroller.scrollToAnchor("contact");
+  goTo(section: string) {
+    this.scroller.scrollTo(section);
   }
 }
