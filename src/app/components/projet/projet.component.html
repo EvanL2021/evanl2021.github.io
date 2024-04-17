@@ -1,0 +1,14 @@
+<article>
+    <div class="imgContainer">
+        <img [src]="projet.imgUrl" (click)="openProject()"/>
+    </div>
+    
+    <div class="infosContainer">
+        <h3>{{projet.title}}</h3>
+        <p *ngFor="let subtitle of projet.subtitles">{{subtitle}}</p>
+
+        <div class="languagesContainer">
+            <img *ngFor="let language of projet.languages" [src]="getImgUrl(language)"/>
+        </div>
+    </div>
+</article>

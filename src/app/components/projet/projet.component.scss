@@ -1,0 +1,57 @@
+article {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #39437A 0%, #2C3A7A 100%);
+    border-radius: 2.813rem;
+    width: 55rem;
+    padding: 2rem;
+
+    .imgContainer {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+
+        img {
+            cursor: pointer
+        }
+    }
+
+    .infosContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 4;
+
+        .languagesContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 2.5rem;
+            margin-top: 1rem;
+            
+            img {
+                height: 3.125rem;
+                width: auto;
+            }
+        }
+
+        h3 {
+            font-family: 'Roboto', 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin: 0;
+            color: #DCDCDC;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: 'Roboto', 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.9rem;
+            margin: 0;
+            color: #BDBDBD;
+            margin-bottom: 0.75rem;
+        }
+    }
+}

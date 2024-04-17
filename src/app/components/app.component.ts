@@ -7,11 +7,12 @@ import { CompetencesComponent } from './competences/competences.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ParcoursComponent } from './parcours/parcours.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, PresentationComponent, CompetencesComponent, ContactComponent, HttpClientModule, ParcoursComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, PresentationComponent, CompetencesComponent, ContactComponent, HttpClientModule, ParcoursComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

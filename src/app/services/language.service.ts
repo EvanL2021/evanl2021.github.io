@@ -11,7 +11,7 @@ export class LanguageService {
     "Mobile": ["ReactNative", "Flutter"],
     "Backend": ["Javascript", "Typescript", "Spring", "PHP", "NodeJS", "BunJS"],
     "Base de données": ["MongoDB", "MySQL", "PostgresQL"],
-    "Divers": ["AWS", "Docker", "Github"],
+    "Divers": ["AWS", "Docker", "Github", "Notion"],
   }
 
   constructor() { };

@@ -1,0 +1,15 @@
+#projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+    h2 {
+        font-style: bold;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: #DCDCDC;
+        font-family: 'Roboto', 'Lexend';
+        margin: 0;
+    }
+}

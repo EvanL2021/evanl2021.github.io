@@ -1,0 +1,24 @@
+[
+    {
+        "projectUrl": "https://github.com/EvanL2021/aws-rss-reader",
+        "imgUrl": "assets/projets/awsrssreader.svg",
+        "title": "AWS Rss Reader",
+        "subtitles": [
+            "Lecteur de plusieurs flux RSS réalisé en typescript.",
+            "Créé des pages sur une base de données Notion grâce au sdk de notion.",
+            "Déploiement serverless sur des services AWS (Lambda et EventBridge)."
+        ],
+        "languages": ["AWS", "Notion", "Javascript", "Typescript", "NodeJS"]
+    },
+    {
+        "projectUrl": "https://github.com/EvanL2021/tierlist-maker",
+        "imgUrl": "assets/projets/tiermaker.svg",
+        "title": "Tierlist Maker",
+        "subtitles": [
+            "Créer des tierlists.",
+            "Site fait avec angular.",
+            "Déploiement sur github pages avec angular-cli-ghpages."
+        ],
+        "languages": ["Angular", "Javascript", "Typescript", "NodeJS"]
+    }
+]
