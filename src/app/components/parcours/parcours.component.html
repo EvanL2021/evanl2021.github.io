@@ -1,3 +1,6 @@
-<article id="parcours">
+<div id="parcours">
     <h2>Mon parcours</h2>
-</article>
+    <div id="parcoursContainer">
+        <app-enterprise *ngFor="let parcour of parcours; let i = index" [parcours]="parcour" [ngStyle]="getParcoursCell(parcour, i)"/>
+    </div>
+</div>

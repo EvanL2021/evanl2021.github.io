@@ -1,0 +1,35 @@
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+
+    .jobContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        h3 {
+            font-family: 'Roboto', 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1rem;
+            color: #BDBDBD;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: #DCDCDC;
+        }
+        
+        p {
+            font-family: 'Roboto', 'Lexend';
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            color: #9D9D9D;
+            font-size: 1rem;
+        }
+    }
+}

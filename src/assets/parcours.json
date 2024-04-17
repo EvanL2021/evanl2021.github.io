@@ -1,41 +1,41 @@
 [
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/ibm.svg",
         "title": "Assistant développeur",
         "subtitle": "IBM CIC Lille - Contrat en alternance",
         "date": "août 2023 - août 2024",
         "isJob": true
     },
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/toeic.png",
         "title": "Certification TOEIC",
         "subtitle": "Anglais niveau B2 - 880/990",
         "date": "Janvier 2024",
         "isJob": false
     },
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/accima.png",
         "title": "Développeur WordPress",
         "subtitle": "ACCIMA, Agence - Stage",
         "date": "avril 2023 - mai 2023",
         "isJob": true
     },
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/ei.png",
         "title": "Développeur lua & javascript",
         "subtitle": "E.I. Evan LABIT - Freelance",
         "date": "août 2022 - avril 2023",
         "isJob": true
     },
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/ulco.png",
         "title": "BUT Informatique",
         "subtitle": "IUT du Littoral Côté d’Opale",
         "date": "septembre 2021 - juillet 2024",
         "isJob": false
     },
     {
-        "imgUrl": "",
+        "imgUrl": "assets/parcours/mariette.png",
         "title": "Baccalauréat général",
         "subtitle": "Lycée Mariette",
         "date": "septembre 2021 - juillet 2021",

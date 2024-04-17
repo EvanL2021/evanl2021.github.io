@@ -1,0 +1,11 @@
+<article [ngStyle]="getJustify()">
+    <img *ngIf="isJob()" [src]="getImgUrl()" />
+
+    <div class="jobContainer">
+        <h3 class="title">{{getTitle()}}</h3>
+        <h3>{{getSubTitle()}}</h3>
+        <p>{{getDate()}}</p>
+    </div>
+
+    <img *ngIf="!isJob()" [src]="getImgUrl()" />
+</article>
