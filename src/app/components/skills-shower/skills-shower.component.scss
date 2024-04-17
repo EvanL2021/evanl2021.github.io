@@ -1,11 +1,11 @@
 .shillsShowerContainer {
-    padding: 2.5rem 0;
-    width: 82.375rem;
+    padding: 2rem;
+    min-width: 50rem;
     background: linear-gradient(180deg, #343D6B 0%, #2C3A7A 100%);
-    border-radius: 2.813rem;
+    border-radius: 2.344vw;
     display: grid;
     justify-content: center;
     justify-items: center;
     grid-template-columns: repeat(auto-fill, 6.25rem);
-    gap: 4rem;
+    gap: 3.333vw;
 }

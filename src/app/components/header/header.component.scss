@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2.5vw;
 
     .titles {
         list-style-type: none;
@@ -11,7 +11,7 @@ header {
         align-items: center;
         padding: 0;
         margin: 0;
-        gap: 8rem;
+        gap: 6.667vw;;
     }
     
     .link {
@@ -20,8 +20,8 @@ header {
         color: #DCDCDC;
         font-style: normal;
         font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 3.75rem;
+        font-size: 1.3rem;
+        line-height: 3.125vw;
         cursor: pointer;
     }
 }

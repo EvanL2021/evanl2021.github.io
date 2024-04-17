@@ -8,27 +8,27 @@ article {
         font-family: 'Roboto', 'Lexend';
         font-style: bold;
         font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 10rem;
+        font-size: 2rem;
+        line-height: 16vh;
         color: #DCDCDC;
     }
 
     form {
         background: linear-gradient(180deg, #343D6B 0%, #2C3A7A 100%);
-        width: 36rem;
-        height: 40.25rem;
-        border-radius: 2.813rem;
+        border-radius: 4.501vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 4vh 5vw;
+        min-width: 20rem;
     }
 
     
     .mat-ecv-outlined-color {
         background: transparent;
-        border: #7626c5 0.188rem solid;
-        border-radius: 1.25rem;
+        border: #7626c5 0.157vw solid;
+        border-radius: 1.042vw;
         color: #dcdcdc;
     }
 
@@ -37,21 +37,21 @@ article {
         text-align: center;
         font-family: 'Roboto', 'Lexend';
         color: #dcdcdc;
-        width: 23.75rem;
-        height: 3.5rem;
+        width: 19.792vw;
+        height: 5.6vh;
         font-style: normal;
         font-weight: 400;
-        font-size: 1rem;
-        line-height: 5rem;
+        font-size: 0.833vw;
+        line-height: 8vh;
     }
 
     .inputForm {
-        width: 23.75rem;
-        height: 3rem;
+        min-width: 17.5rem;
+        height: 4.8vh;
         background-color: transparent;
-        border: #4F598E 0.15rem solid;
-        border-radius: 0.313rem;
-        margin-bottom: 2.813rem;
+        border: #4F598E 0.125vw solid;
+        border-radius: 0.261vw;
+        margin-bottom: 4.501vh;
     }
 
     .inputForm:focus {
@@ -62,16 +62,16 @@ article {
         font-family: 'Roboto', 'Lexend';
         font-style: normal;
         font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.6vh;
         color: #DCDCDC;
-        margin-bottom: 0.5rem;
-        padding: 0 0.313rem;
+        margin-bottom: 0.8vh;
+        padding: 0 0.261vw;
         text-align: center;
     }
 
     .textAreaForm {
-        height: 10rem;
+        height: 16vh;
         resize: none;
     }
 

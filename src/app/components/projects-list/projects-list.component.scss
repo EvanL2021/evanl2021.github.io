@@ -10,18 +10,18 @@
         justify-content: center;
         align-items: center;
         padding: 0;
-        margin-bottom: 6.25rem;
+        margin-bottom: 2rem;
 
         list-style-type: none;
-        gap: 3.125rem;
+        gap: 2.604vw;
 
         li a {
             cursor: pointer;
             font-family: 'Roboto', 'Lexend';
             font-style: normal;
             font-weight: 400;
-            font-size: 1.1rem;
-            line-height: 3.75rem;
+            font-size: 1rem;
+            line-height: 6vh;
         }
 
         .selected {
@@ -36,6 +36,6 @@
     .projectsContainer {
         display: flex;
         flex-direction: column;
-        gap: 2.188rem;
+        gap: 3.501vh;
     }
 }

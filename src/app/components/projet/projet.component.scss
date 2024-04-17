@@ -2,8 +2,8 @@ article {
     display: flex;
     flex-direction: row;
     background: linear-gradient(180deg, #39437A 0%, #2C3A7A 100%);
-    border-radius: 2.813rem;
-    width: 55rem;
+    border-radius: 2.344vw;
+    min-width: 45rem;
     padding: 2rem;
 
     .imgContainer {  
@@ -25,11 +25,11 @@ article {
         .languagesContainer {
             display: flex;
             flex-direction: row;
-            gap: 2.5rem;
+            gap: 2vw;
             margin-top: 1rem;
             
             img {
-                height: 3.125rem;
+                height: 3.6rem;
                 width: auto;
             }
         }
@@ -38,7 +38,7 @@ article {
             font-family: 'Roboto', 'Lexend';
             font-style: normal;
             font-weight: 400;
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 0;
             color: #DCDCDC;
             margin-bottom: 1rem;
@@ -48,10 +48,10 @@ article {
             font-family: 'Roboto', 'Lexend';
             font-style: normal;
             font-weight: 400;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             margin: 0;
             color: #BDBDBD;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
     }
 }
