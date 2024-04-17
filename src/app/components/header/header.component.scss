@@ -1,21 +1,26 @@
 header {
-    margin: 3rem 18.75rem 0rem 18.75rem;
-}
-
-.titles {
-    list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    justify-content: center;
+    margin-top: 3rem;
 
-.link {
-    text-decoration: none;
-    font-family: 'Roboto', 'Lexend';
-    color: #DCDCDC;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 3.75rem;
+    .titles {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 8rem;
+    }
+    
+    .link {
+        text-decoration: none;
+        font-family: 'Roboto', 'Lexend';
+        color: #DCDCDC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 3.75rem;
+    }
 }
