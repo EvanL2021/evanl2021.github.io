@@ -11,7 +11,7 @@ header {
         align-items: center;
         padding: 0;
         margin: 0;
-        gap: 6.667vw;;
+        gap: 6.667vw;
     }
     
     .link {
@@ -23,5 +23,20 @@ header {
         font-size: 1.3rem;
         line-height: 3.125vw;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin-top: 3rem;
+        
+        .titles {
+            flex-direction: column;
+            gap: 15vw;
+        }
+
+        .link {
+            font-size: 1.5rem;
+        }
     }
 }

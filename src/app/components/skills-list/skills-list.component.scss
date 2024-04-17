@@ -33,3 +33,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .skillsContainer {
+        .tabsContainer {
+            flex-direction: column;
+            gap: 1vw;
+
+            li a {
+                line-height: 5vh;
+            }
+        }
+    }
+}

@@ -31,10 +31,4 @@ export class EnterpriseComponent {
   isJob(): boolean {
     return this.parcours.isJob;
   }
-
-  getJustify(): {'justify-content': string} {
-    return {
-      'justify-content': this.isJob() ? 'start' : 'end'
-    };
-  }
 }

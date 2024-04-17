@@ -25,3 +25,15 @@
         background-position: center;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    #parcours {
+        #parcoursContainer {
+            margin-top: 8vh;
+            display: flex;
+            flex-direction: column;
+            gap: 8.333vw;
+            background: none;
+        }
+    }
+}

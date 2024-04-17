@@ -23,13 +23,14 @@ article {
         padding: 4vh 5vw;
         min-width: 20rem;
     }
-
-    
+      
     .mat-ecv-outlined-color {
         background: transparent;
-        border: #7626c5 0.157vw solid;
-        border-radius: 1.042vw;
+        border: #7626c5 0.2rem solid;
+        border-radius: 1.25rem;
         color: #dcdcdc;
+        min-width: 17.5rem;
+        height: 3.5rem;
     }
 
     .mat-ecv-color {
@@ -37,12 +38,12 @@ article {
         text-align: center;
         font-family: 'Roboto', 'Lexend';
         color: #dcdcdc;
-        width: 19.792vw;
-        height: 5.6vh;
+        min-width: 17.5rem;
+        height: 3.5rem;
         font-style: normal;
         font-weight: 400;
-        font-size: 0.833vw;
-        line-height: 8vh;
+        font-size: 1rem;
+        line-height: 5rem;
     }
 
     .inputForm {

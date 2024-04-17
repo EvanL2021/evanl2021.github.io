@@ -17,7 +17,7 @@ main {
             font-style: normal;
             font-weight: 400;
             font-size: 6.25rem;
-            line-height: 10.4vh;
+            line-height: 5rem;
             margin-bottom: 1rem;
         }
     
@@ -28,7 +28,7 @@ main {
             font-style: normal;
             font-weight: 400;
             font-size: 2rem;
-            line-height: 4.8vh;
+            line-height: 3rem;
         }
     
         p {
@@ -37,7 +37,7 @@ main {
             font-family: 'Roboto', 'Lexend';
             font-style: normal;
             font-size: 1.25rem;
-            line-height: 4vh;
+            line-height: 1.5rem;
         }
 
         .btnsCont {
@@ -53,5 +53,67 @@ main {
         min-width: 27rem;
         height: auto;
         border-radius: 10rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        .presContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            h1 {
+                color: #DCDCDC;
+                margin: 0;
+                font-family: 'Roboto', 'Lexend';
+                font-style: normal;
+                text-align: center;
+                font-weight: 400;
+                font-size: 6rem;
+                line-height: 5rem;
+                margin-bottom: 1rem;
+            }
+        
+            h2 {
+                color: #DCDCDC;
+                margin: 0;
+                font-family: 'Roboto', 'Lexend';
+                font-style: normal;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 3rem;
+            }
+        
+            p {
+                color: #BDBDBD;
+                margin: 0;  
+                font-family: 'Roboto', 'Lexend';
+                font-style: normal;
+                text-align: center;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+    
+            .btnsCont {
+                margin-top: 2.4vh;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 2.083vw
+            }
+        }
+
+        img {
+            min-width: 20rem;
+            height: auto;
+            border-radius: 5rem;
+        }
     }
 }

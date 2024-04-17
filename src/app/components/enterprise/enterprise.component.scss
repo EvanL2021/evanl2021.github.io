@@ -33,3 +33,21 @@ article {
         }
     }
 }
+
+.imgLeft {
+    flex-direction: row;
+}
+
+.imgRight {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        justify-content: center;
+    }
+
+    .imgRight {
+        flex-direction: row;
+    }
+}

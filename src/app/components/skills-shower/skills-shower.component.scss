@@ -9,3 +9,17 @@
     grid-template-columns: repeat(auto-fill, 6.25rem);
     gap: 3.333vw;
 }
+
+@media only screen and (max-width: 768px) {
+    .shillsShowerContainer {
+        padding: 2rem;
+        min-width: 8rem;
+        background: linear-gradient(180deg, #343D6B 0%, #2C3A7A 100%);
+        border-radius: 2.344vw;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, 6.25rem);
+        gap: 3.333vw;
+    }
+}
