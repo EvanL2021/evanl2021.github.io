@@ -4,11 +4,10 @@ import { SkillsShowerComponent } from 'components/skills-shower/skills-shower.co
 import { LanguageService } from 'services/language.service';
 
 @Component({
-  selector: 'app-skills-list',
-  standalone: true,
-  imports: [CommonModule, SkillsShowerComponent],
-  templateUrl: './skills-list.component.html',
-  styleUrl: './skills-list.component.scss'
+    selector: 'app-skills-list',
+    imports: [CommonModule, SkillsShowerComponent],
+    templateUrl: './skills-list.component.html',
+    styleUrl: './skills-list.component.scss'
 })
 export class SkillsListComponent {
   categories: Array<string>;

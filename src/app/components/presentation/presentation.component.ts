@@ -3,11 +3,10 @@ import { ButtonComponent } from 'components/button/button.component';
 import { ScrollService } from 'services/scroll.service';
 
 @Component({
-  selector: 'app-presentation',
-  standalone: true,
-  imports: [ButtonComponent],
-  templateUrl: './presentation.component.html',
-  styleUrl: './presentation.component.scss'
+    selector: 'app-presentation',
+    imports: [ButtonComponent],
+    templateUrl: './presentation.component.html',
+    styleUrl: './presentation.component.scss'
 })
 export class PresentationComponent {
   profileUrl: string = "assets/evan.jpg"

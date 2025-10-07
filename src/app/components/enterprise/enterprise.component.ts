@@ -3,11 +3,10 @@ import { Parcours } from 'types/parcours';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-enterprise',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './enterprise.component.html',
-  styleUrl: './enterprise.component.scss'
+    selector: 'app-enterprise',
+    imports: [CommonModule],
+    templateUrl: './enterprise.component.html',
+    styleUrl: './enterprise.component.scss'
 })
 export class EnterpriseComponent {
   @Input({required: true}) parcours!: Parcours;
