@@ -5,11 +5,10 @@ import { ParcoursService } from 'services/parcours.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-parcours',
-  standalone: true,
-  imports: [EnterpriseComponent, CommonModule],
-  templateUrl: './parcours.component.html',
-  styleUrl: './parcours.component.scss'
+    selector: 'app-parcours',
+    imports: [EnterpriseComponent, CommonModule],
+    templateUrl: './parcours.component.html',
+    styleUrl: './parcours.component.scss'
 })
 export class ParcoursComponent implements OnInit {
   parcours: Parcours[] = [];

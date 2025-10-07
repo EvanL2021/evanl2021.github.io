@@ -4,11 +4,10 @@ import { ViewportScroller } from "@angular/common";
 import { ScrollService } from 'services/scroll.service';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [ButtonComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    imports: [ButtonComponent],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
