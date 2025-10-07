@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ButtonComponent } from 'components/button/button.component';
 import { ViewportScroller } from "@angular/common";
 import { ScrollService } from 'services/scroll.service';
@@ -10,8 +10,8 @@ import { ScrollService } from 'services/scroll.service';
     styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
-  constructor(private scroller: ScrollService) {};
+  private scroller = inject(ScrollService);
+;
 
   goTo(section: string) {
     this.scroller.scrollTo(section);

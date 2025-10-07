@@ -7,8 +7,6 @@ import { Parcours } from 'types/parcours';
 })
 export class ParcoursService {
 
-  constructor() { }
-
   getParcours(): Parcours[] {
     return parcoursData as Parcours[];
   }

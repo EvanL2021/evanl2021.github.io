@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -11,13 +11,13 @@ import { MatButtonModule } from '@angular/material/button';
     styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  private httpClient = inject(HttpClient);
+
   contactForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     name: new FormControl('', [Validators.required, Validators.minLength(5)]),
     body: new FormControl('', [Validators.required, Validators.minLength(25)]),
-  });
-
-  constructor(private httpClient: HttpClient) {};
+  });;
 
   sendMail() {
     const {name, email, body} = this.contactForm.value;

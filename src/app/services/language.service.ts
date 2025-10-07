@@ -14,8 +14,6 @@ export class LanguageService {
     "Divers": ["AWS", "Docker", "Github", "Notion"],
   }
 
-  constructor() { };
-
   getLanguageTabs(): Array<string> {
     return Object.keys(this.languages);
   }

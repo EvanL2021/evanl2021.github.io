@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ProjetComponent } from 'components/projet/projet.component';
 import { ProjetsService } from 'services/projets.service';
 
@@ -9,11 +9,13 @@ import { ProjetsService } from 'services/projets.service';
     styleUrl: './projects-list.component.scss',
     imports: [ProjetComponent]
 })
-export class ProjectsListComponent {
-  categories: Array<string>;
+export class ProjectsListComponent implements OnInit {
+  private projectService = inject(ProjetsService);
+
+  categories: Array<string> = [];
   selectedCategory: string = 'Tous';
 
-  constructor(private projectService: ProjetsService) {
+  ngOnInit() {
     this.categories = this.projectService.getLanguageTabs();
   };
 

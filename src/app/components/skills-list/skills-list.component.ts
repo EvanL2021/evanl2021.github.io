@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 
 import { SkillsShowerComponent } from 'components/skills-shower/skills-shower.component';
 import { LanguageService } from 'services/language.service';
@@ -9,11 +9,13 @@ import { LanguageService } from 'services/language.service';
     templateUrl: './skills-list.component.html',
     styleUrl: './skills-list.component.scss'
 })
-export class SkillsListComponent {
-  categories: Array<string>;
+export class SkillsListComponent implements OnInit {
+  private languageService = inject(LanguageService);
+
+  categories: Array<string> = [];
   selectedCategory: string = 'Tous';
 
-  constructor(private languageService: LanguageService) {
+  ngOnInit() {
     this.categories = this.languageService.getLanguageTabs();
   };
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { EnterpriseComponent } from 'components/enterprise/enterprise.component';
 import { Parcours } from 'types/parcours';
 import { ParcoursService } from 'services/parcours.service';
@@ -11,8 +11,9 @@ import { CommonModule } from '@angular/common';
     styleUrl: './parcours.component.scss'
 })
 export class ParcoursComponent implements OnInit {
-  parcours: Parcours[] = [];
-  constructor(private parcoursService: ParcoursService) {};
+  private parcoursService = inject(ParcoursService);
+
+  parcours: Parcours[] = [];;
 
   ngOnInit() {
     this.parcours = this.parcoursService.getParcours();

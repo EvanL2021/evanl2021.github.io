@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ButtonComponent } from 'components/button/button.component';
 import { ScrollService } from 'services/scroll.service';
 
@@ -9,9 +9,9 @@ import { ScrollService } from 'services/scroll.service';
     styleUrl: './presentation.component.scss'
 })
 export class PresentationComponent {
-  profileUrl: string = "assets/evan.jpg"
-  
-  constructor(private scroller: ScrollService) {};
+  private scroller = inject(ScrollService);
+
+  profileUrl: string = "assets/evan.jpg";
 
   downloadCV() {
     const link = document.createElement('a');

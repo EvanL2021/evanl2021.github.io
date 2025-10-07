@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, SimpleChanges, input, inject } from '@angular/core';
 
 import { LanguageService } from 'services/language.service';
 
@@ -9,16 +9,16 @@ import { LanguageService } from 'services/language.service';
     styleUrl: './skills-shower.component.scss'
 })
 export class SkillsShowerComponent implements OnChanges {
-  @Input({required: true}) category!: string;
-  languages: Array<string> = [];
+  private languageService = inject(LanguageService);
 
-  constructor(private languageService: LanguageService) {};
+  readonly category = input.required<string>();
+  languages: Array<string> = [];;
 
   toUrl(language: string) {
     return this.languageService.getLanguageUrl(language);
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.languages = this.languageService.getLanguages(this.category);
+    this.languages = this.languageService.getLanguages(this.category());
   }
 }

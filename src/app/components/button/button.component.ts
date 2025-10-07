@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, output, input } from '@angular/core';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,10 +10,10 @@ import { MatIconModule } from '@angular/material/icon';
     styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  @Input({required: true}) text!: string;
-  @Input({required: false}) icon!: string;
-  @Input({required: false}) outlined!: string;
-  @Output() doClick: EventEmitter<any> = new EventEmitter();
+  readonly text = input.required<string>();
+  readonly icon = input<string>();
+  readonly outlined = input(false);
+  readonly doClick = output();
 
   onClick(): void {
     this.doClick.emit();

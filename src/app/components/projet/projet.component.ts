@@ -1,5 +1,5 @@
 
-import { Component, Input } from '@angular/core';
+import { Component, input, inject } from '@angular/core';
 import { LanguageService } from 'services/language.service';
 import { Projet } from 'types/projet';
 
@@ -10,12 +10,12 @@ import { Projet } from 'types/projet';
     styleUrl: './projet.component.scss'
 })
 export class ProjetComponent {
-  @Input({required: true}) projet!: Projet;
+  private languageService = inject(LanguageService);
 
-  constructor(private languageService: LanguageService) { };
+  readonly projet = input.required<Projet>();;
 
   openProject() {
-    window.open(this.projet.projectUrl);
+    window.open(this.projet().projectUrl);
   }
 
   getImgUrl(language: string) {
