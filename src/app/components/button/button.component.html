@@ -1,4 +1,6 @@
 <button (click)="onClick()" class="button" mat-fab extended [color]="outlined ? 'ecv-outlined-color' : 'ecv-color'">
-    <mat-icon *ngIf="icon">{{icon}}</mat-icon>
-    {{text}}
+  @if (icon) {
+    <mat-icon>{{icon}}</mat-icon>
+  }
+  {{text}}
 </button>

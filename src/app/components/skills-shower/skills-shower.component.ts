@@ -1,10 +1,10 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { LanguageService } from 'services/language.service';
 
 @Component({
     selector: 'app-skills-shower',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './skills-shower.component.html',
     styleUrl: './skills-shower.component.scss'
 })

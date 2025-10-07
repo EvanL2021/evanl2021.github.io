@@ -1,13 +1,17 @@
 <div class="projectslistContainer">
-    <nav>
-        <ul class="tabsContainer">
-            <li *ngFor="let category of categories">
-                <a (click)="setActive(category)" [class]="selectedCategory == category ? 'selected' : 'unselected'">{{category}}</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <div class="projectsContainer">
-        <app-projet *ngFor="let projet of getProjets()" [projet]="projet"/>
-    </div>
+  <nav>
+    <ul class="tabsContainer">
+      @for (category of categories; track category) {
+        <li>
+          <a (click)="setActive(category)" [class]="selectedCategory == category ? 'selected' : 'unselected'">{{category}}</a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <div class="projectsContainer">
+    @for (projet of getProjets(); track projet) {
+      <app-projet [projet]="projet"/>
+    }
+  </div>
 </div>

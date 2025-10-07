@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { ProjetComponent } from 'components/projet/projet.component';
 import { ProjetsService } from 'services/projets.service';
@@ -7,7 +7,7 @@ import { ProjetsService } from 'services/projets.service';
     selector: 'app-projects-list',
     templateUrl: './projects-list.component.html',
     styleUrl: './projects-list.component.scss',
-    imports: [CommonModule, ProjetComponent]
+    imports: [ProjetComponent]
 })
 export class ProjectsListComponent {
   categories: Array<string>;

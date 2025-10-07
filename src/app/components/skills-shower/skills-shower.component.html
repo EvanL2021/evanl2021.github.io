@@ -1,3 +1,5 @@
 <div class="shillsShowerContainer">
-    <img *ngFor="let language of languages" [src]="toUrl(language)" [alt]="language" style="width:6.25rem; height:6.25rem">
+  @for (language of languages; track language) {
+    <img [src]="toUrl(language)" [alt]="language" style="width:6.25rem; height:6.25rem">
+  }
 </div>

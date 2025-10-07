@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Input } from '@angular/core';
 import { LanguageService } from 'services/language.service';
 import { Projet } from 'types/projet';
 
 @Component({
     selector: 'app-projet',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './projet.component.html',
     styleUrl: './projet.component.scss'
 })
